@@ -2,9 +2,9 @@ public class bestTimeToBuyAndSellStock2{
 	public static void main (String[] args){
 	}
 	public static int maxProfit(int[] prices){
-        int profit =0;
-        int l = prices.length;
-        if(l>=1){
+		int profit =0;
+		int l = prices.length;
+		if(l>=1){
 			int iMin = nSmall(prices);
 			int iMax = nBig(prices);
 			if(iMin==0 && iMax==l-1){     
@@ -42,9 +42,9 @@ public class bestTimeToBuyAndSellStock2{
 		}else{
 			profit =0;
 		}
-        return profit;
-    }
-    public static int nSmall(int [] n){
+		return profit;
+	}
+	public static int nSmall(int [] n){
 		int i = 0;
 		while(i<n.length-1){
 			if(n[i]>n[i+1]){
@@ -71,6 +71,4 @@ public class bestTimeToBuyAndSellStock2{
 			return i;
 		}
 	}
-	
-
 }
