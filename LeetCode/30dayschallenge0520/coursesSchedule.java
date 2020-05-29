@@ -22,7 +22,7 @@ class Solution {
                 if(visited[i]==0 && cycle(mark,visited,i))   return true;
             }
         }
-        visited[index]=2;
+        visited[index]=2;//finish the visit
         return false;
     }
 }
